@@ -1,0 +1,30 @@
+{
+	"extends": "gts/tsconfig-google.json",
+	"compilerOptions": {
+		"outDir": "build",
+		"target": "ES2018",
+		"module": "commonjs",
+		"moduleResolution": "node",
+		"sourceMap": true,
+		"removeComments": true,
+		"experimentalDecorators": true,
+		"emitDecoratorMetadata": true,
+		"noUnusedLocals": true,
+		"skipLibCheck": true,
+		"types": [
+			"node",
+			"jest",
+			"reflect-metadata"
+		],
+		"typeRoots": [
+			"./node_modules/@types",
+			"./src/types"
+		],
+		"lib": [
+			"ES2018"
+		]
+	},
+	"exclude": [
+		"script"
+	]
+}
